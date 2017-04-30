@@ -1,6 +1,8 @@
 package stringArrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by Justin on 24/04/2017.
@@ -61,6 +63,7 @@ public class ArraysAndString {
     }
 
     public String compressGivenString(String str){
+
         StringBuilder strBuilder = new StringBuilder();
         int counter = 0;
         for(int i = 0; i<str.length();i++){
