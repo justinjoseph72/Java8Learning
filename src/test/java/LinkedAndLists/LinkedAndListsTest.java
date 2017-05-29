@@ -62,6 +62,27 @@ public class LinkedAndListsTest {
         assertEquals(9,c.get(2).intValue());
     }
 
+    @Test
+    public void Test_list_palidrome(){
+        LinkedAndLists obj = new LinkedAndLists();
+        LinkedList<Integer> a = new LinkedList<>();
+        a.add(4);a.add(1);a.add(1);a.add(4);
+        boolean result = obj.checkPalindrome(a);
+        assertEquals(true,result);
+    }
+
+    @Test
+    public void Test_list_intersection(){
+        LinkedList<Integer> list1 = new LinkedList<>() ;
+        LinkedList<Integer> list2 = new LinkedList<>() ;
+        list1.add(1);;list1.add(2);;list1.add(2);;list1.add(3);;list1.add(3);
+        list2.add(4);list2.add(5);list2.add(2); list2.add(3);
+    }
+
+
+    public void Setup(){
+
+    }
 
 
 

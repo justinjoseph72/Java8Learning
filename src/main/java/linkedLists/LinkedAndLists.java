@@ -3,6 +3,7 @@ package linkedLists;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
 
 /**
  * Created by Justin on 30/04/2017.
@@ -73,4 +74,51 @@ public class LinkedAndLists {
         }
         return retrunList;
     }
+
+    public boolean checkPalindrome(LinkedList<Integer> list){
+        boolean myReturn = true;
+        //reversing
+        LinkedList<Integer> reverList = new LinkedList<>();
+        for(int i=list.size()-1;i>=0;i--){
+            reverList.add(list.get(i));
+        }
+        //comparing
+        for(int j= 0;j<list.size();j++){
+            if(reverList.get(j) !=list.get(j)){
+                return false;
+            }
+        }
+
+        return myReturn;
+    }
+
+    public Integer getIntersection(LinkedList<Integer> list1, LinkedList<Integer> list2){
+        Integer myreturn = null;
+        if (list1!=null && list2!=null && !list1.isEmpty() && !list2.isEmpty()) {
+            if(!list1.get(list1.size()-1).equals(list2.get(list2.size()-1))){
+                return null;
+            }
+            int itersize = 0;
+            if(list1.size()== list2.size()){
+                itersize = list1.size();
+            }
+            else{
+                itersize = Math.abs(list1.size()-list2.size());
+            }
+            if(itersize>0){
+                for(int i=itersize-1;i<=0;i++){
+                    if(list1.get(i)==list2.get(i)){
+                        myreturn = list1.get(i);
+                    }
+                    else{
+                        break;
+                    }
+                }
+            }
+        }
+
+        return myreturn;
+    }
+
+
 }
