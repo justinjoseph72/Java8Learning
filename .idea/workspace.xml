@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980558ea-f2ca-41ec-af8a-153e830cda10" name="Default" comment="linkedlist changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dateTime/DataTime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/recurssion/Fibonacci.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/recurssion/MagicIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/recurssion/Point.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/recurssion/TripleStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/recurssion/Fibonaccitest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/recurssion/MagicIndexTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/recurssion/TestTripleTest.java" />
+    <list default="true" id="980558ea-f2ca-41ec-af8a-153e830cda10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/stringArrays/ArraysAndString.class" afterPath="$PROJECT_DIR$/target/classes/stringArrays/ArraysAndString.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stringArrays/ArrayAndStringTest.class" afterPath="$PROJECT_DIR$/target/test-classes/stringArrays/ArrayAndStringTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/linkedLists/LinkedAndLists.java" afterPath="$PROJECT_DIR$/src/main/java/linkedLists/LinkedAndLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LinkedAndLists/LinkedAndListsTest.java" afterPath="$PROJECT_DIR$/src/test/java/LinkedAndLists/LinkedAndListsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -972,7 +962,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493596503870</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="linkedlist changes">
+      <created>1496094914767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496094914767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
