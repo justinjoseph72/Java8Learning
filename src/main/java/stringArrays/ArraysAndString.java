@@ -1,8 +1,6 @@
 package stringArrays;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Justin on 24/04/2017.
@@ -129,6 +127,8 @@ public class ArraysAndString {
             if (x != -1) {
                 table[x]++;
             }
+
+
         }
         return table;
     }
@@ -155,5 +155,17 @@ public class ArraysAndString {
         char[] content = str.toCharArray();
         Arrays.sort(content);
         return new String(content);
+    }
+
+    public void sss(String s){
+        Set<String> mySet = new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+
+
+
     }
 }
