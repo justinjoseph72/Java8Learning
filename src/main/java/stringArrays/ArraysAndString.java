@@ -39,6 +39,7 @@ public class ArraysAndString {
     }
 
     public boolean isStringPalidrome(String phrase) {
+
         boolean myReturn = false;
         int[] table = buildCharFrequencyTable(phrase);
         myReturn = checkMaxOneOdd(table);
@@ -165,7 +166,19 @@ public class ArraysAndString {
             }
         });
 
+    }
 
-
+    public boolean isPalindrome1(String phrase){
+        char[] charArray = phrase.toCharArray();
+        int i =0;
+        int l = charArray.length -1;
+        while(i<l){
+            if(charArray[i]!=charArray[l]){
+                return false;
+            }
+            i++;
+            l--;
+        }
+        return true;
     }
 }

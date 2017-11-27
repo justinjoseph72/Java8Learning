@@ -25,7 +25,15 @@ public class ArrayAndStringTest {
     @Ignore
     public  void testIsPalidrome(){
         ArraysAndString obj = new ArraysAndString();
-        boolean result = obj.isStringPalidrome("tact coa");
+        boolean result = obj.isStringPalidrome("eed");
+        assertTrue(result);
+    }
+
+    @Test
+    @Ignore
+    public  void testIsPalidrome1(){
+        ArraysAndString obj = new ArraysAndString();
+        boolean result = obj.isPalindrome1("ede");
         assertTrue(result);
     }
 
