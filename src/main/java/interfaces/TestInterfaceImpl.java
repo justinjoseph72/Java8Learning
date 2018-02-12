@@ -7,9 +7,14 @@ public class TestInterfaceImpl implements  TestInterface{
         return null;
     }
 
-    public String static_method(){
-        return "Impl";
+    public static String static_method(){
+        return "Impl static method";
     }
+
+//    @Override
+//    public void default_method(){
+//        System.out.println("default method of impl");
+//    }
 
 
 }

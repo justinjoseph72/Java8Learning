@@ -6,6 +6,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MapsTESt {
 
@@ -59,5 +62,26 @@ public class MapsTESt {
         st = new StaticTest(8);
         st.disp();
 
+    }
+
+
+    @Test
+    public void testStream(){
+        Map<Integer,String> map = new HashMap<>();
+        map.put(0,"Justin");
+        map.put(1,"Saumya");
+        map.put(2,"Robin");
+        map.put(3,"Sardar");
+
+
+       String joinedStr =  map.keySet().stream()
+        .filter(x->x%2==0).map(s->getNames(s,map))
+                .collect(Collectors.joining(","));
+       System.out.println(joinedStr);
+
+    }
+
+    private String getNames(Integer s, Map<Integer, String> map) {
+        return  map.get(s);
     }
 }
